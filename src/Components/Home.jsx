@@ -20,19 +20,21 @@ import PropTypes from "prop-types";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/woman-with-tablet.jpg";
+import image from "../images/nurburgring_mercedes_racing.jpg";
 
-const imageAltText = "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
+const imageAltText = "Mercedes racing at Nurburgring";
 
 const Home = ({ name, title }) => {
   return (
     <section id="home" className="min-height">
       <img className="background" src={image} alt="" />
-      <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
-        <h1>{name}</h1>
-        <h2>{title}</h2>
+      <div style={{ color: "white", position: "relative", marginTop: "10%", marginBottom: "5%"}}>
+        <div style={{ display: "block", position: "relative", padding: "2%", height: "auto", width: "70vw", backgroundColor: "rgba(10, 10, 10, 0.8)"}}>
+          <h1>{name}</h1>
+          <h2>{title}</h2>
+        </div>
       </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
+      <div style={{ position: "absolute", bottom: "3rem", left: "90%"}}>
         <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
       </div>
     </section>
